@@ -1,4 +1,4 @@
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName(".collapsible");
 
 for(let i=o; i< coll.length; i++){
 coll[i].addEventListener("click", function(){
@@ -32,22 +32,22 @@ function getTime(){
 }
 function firstBotMessage(){
     let firstBotMessage ="How's it going?"
-    document.getElementsById("botStarterMessage").innerHTML ='<p class="botText"><span>' + firstMessage + '</span></p>'
+    document.getElementById(".botStarterMessage").innerHTML ='<p class="botText"><span>' + firstMessage + '</span></p>'
      
     let time = getTime();
      $("chat-timestamp").appemd(time);
-     document.getElementById("userInput").scrollIntoView(false);
+     document.getElementById(".userInput").scrollIntoView(false);
 }
 
 
 firstBotMessage();
 
-function getHardResponses(userText){
+function getHardResponse(userText){
     let botResponse = getBotResponse(userText);
     let botHtml= '<p class ="botText"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
 
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    document.getElementById(".chat-bar-bottom").scrollIntoView(true);
 
 }
 
@@ -60,10 +60,10 @@ function getResponse(){
     let userHtml='<p class="userText><span>' = userText + '</span></p>';
     $("#textInput").val("");
     $("#chatbox").append(userHtml);
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    document.getElementById(".chat-bar-bottom").scrollIntoView(true);
 
     setTimeout(()=>{
-        getHardResponses(userText);
+        getHardResponse(userText);
     },1000)
 
 
