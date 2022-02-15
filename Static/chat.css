@@ -18,10 +18,10 @@
     border-bottom: none;
 }/*
 .content{
-    background-image: url("Valentines Chatbot-01.png");
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
 }*/
 .full-chat-block{
     width: 350px;
@@ -33,6 +33,7 @@
     transition: max-height 0.2s ease-out;
 }
 .outer-container{
+    background-image: url("./Pictures/Valentines Chatbot-01.png");
     min-height: 500px;
     bottom: 0%;
     position: relative;
