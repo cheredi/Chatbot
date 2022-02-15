@@ -1,6 +1,6 @@
 var coll = document.getElementsByClassName(".collapsible");
 
-for(let i=o; i< coll.length; i++){
+for(let i=0; i< coll.length; i++){
 coll[i].addEventListener("click", function(){
     this.classList.toggle("active");
 
@@ -31,12 +31,12 @@ function getTime(){
 
 }
 function firstBotMessage(){
-    let firstBotMessage ="How's it going?"
-    document.getElementById(".botStarterMessage").innerHTML ='<p class="botText"><span>' + firstMessage + '</span></p>'
+    let firstMessage ="How's it going?"
+    document.getElementById("botStarterMessage").innerHTML ='<p class="botText"><span>' + firstMessage + '</span></p>'
      
     let time = getTime();
-     $("chat-timestamp").appemd(time);
-     document.getElementById(".userInput").scrollIntoView(false);
+     $("chat-timestamp").append(time);
+     document.getElementById("userInput").scrollIntoView(false);
 }
 
 
@@ -57,7 +57,7 @@ function getResponse(){
         userText="I love Codde Palace!";
 
     }
-    let userHtml='<p class="userText><span>' = userText + '</span></p>';
+    let userHtml='<p class="userText"><span>' + userText + '</span></p>';
     $("#textInput").val("");
     $("#chatbox").append(userHtml);
     document.getElementById(".chat-bar-bottom").scrollIntoView(true);
