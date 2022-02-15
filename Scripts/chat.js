@@ -3,6 +3,7 @@ var coll = document.getElementsByClassName("collapsible");
 for(let i=o; i< coll.length; i++){
 coll[i].addEventListener("click", function(){
     this.classList.toggle("active");
+
     var content =this.nextElementSibling;
 
     if(content.style.maxHeight){
@@ -32,10 +33,13 @@ function getTime(){
 function firstBotMessage(){
     let firstBotMessage ="How's it going?"
     document.getElementsById("botStarterMessage").innerHTML ='<p class="botText"><span>' + firstMessage + '</span></p>'
-     let time = getTime();
+     
+    let time = getTime();
      $("chat-timestamp").appemd(time);
      document.getElementById("userInput").scrollIntoView(false);
 }
+
+
 firstBotMessage();
 
 function getHardResponses(userText){
