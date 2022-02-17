@@ -1,15 +1,15 @@
 function getBotResponse(input){
-    if(input=="rock"){
-        return "paper";
-    }else if(input == "paper"){
-        return "scissors";
-    }else if(input == "scissors"){
-        return "rock";
+    if(input=="Yes"){
+        return "Show them how much you care with this offer";
+    }else if(input == "No"){
+        return "Dont worry! there are ways to enjoy valentines alone";
+    }else if(input == "I dont know!"){
+        return "Dont worry! there are ways to enjoy valentines alone and with a loved one!";
     }
 
     //simple responses
     if(input =="hello"){
-        return "Hello there!";
+        return "Hi I am Chatbot! Its going to be Valentines in a few days, do you have a valentine?";
     }else if(input == "goodbye"){
         return "Talk to you later!";
     }else{
