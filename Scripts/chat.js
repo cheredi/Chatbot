@@ -47,7 +47,7 @@ function getHardResponse(userText){
     let botHtml= '<p class ="botText"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
 
-    document.getElementById(".chat-bar-bottom").scrollIntoView(true);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
 }
 
@@ -60,7 +60,7 @@ function getResponse(){
     let userHtml='<p class="userText"><span>' + userText + '</span></p>';
     $("#textInput").val("");
     $("#chatbox").append(userHtml);
-    document.getElementById(".chat-bar-bottom").scrollIntoView(true);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
     setTimeout(()=>{
         getHardResponse(userText);
