@@ -67,11 +67,14 @@ function getResponse(){
     },1000)
 
 
-}
-function buttonSendText(sampleText){
-    let userHtml = '<p class= "userText"><span>' + sampleText +'</span></p>'
 
 }
+
+function buttonSendText(sampleText){
+    let userHtml = '<p class= "userText"><span>' + sampleText +'</span></p>'
+}
+
+
 
 function sendButton(){
     getResponse();
