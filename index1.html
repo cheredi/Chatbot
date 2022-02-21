@@ -13,19 +13,25 @@
     <body>
         <!--Chat Bar block-->
         <div class="chat-bar-collapsible">
-            <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <button id="chat-button" type="button" class="collapsible" onclick="openForm()">Chat with us!
                 <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-0"></i>
             </button>
             <div class="content">
                 <div class="full-chat-block">
+                   
+                   
                 <!--Message Container-->
                 <div class="outer-container">
                     <div class="chat-container">
                         <!--Messages-->
-                        <div id="chatbox">
+                        <div id="chatbox" class="chatbox">
                             <h5 id="chat-timestamp"></h5>
                             <p id="botStarterMessage" class="botText"> <span>Loading....</span></p>
+                            
                         </div>
+                        
+                        
+
                         <!--User Input box-->
                         <div class="chat-bar-input-block">
                             <div id="userInput">
@@ -42,8 +48,20 @@
                             <p></p>
 
                         </div>
+                        
+                        <div class="horizontal-scroll-wrapper squares">
+                            <div>
+                                <img src="/Pictures/gift1.jpg">
+                            </div>
+                            <div>
+                                <img src="/Pictures/gift2.jpg">
+                            </div>
+                            <div> 
+                                <img src="/Pictures/gift3.jpg">
+                            </div>
+                          </div>
                     </div>
-                    <img src="Pictures/valentines Chatbot-01.png" width="320px" height="500px;" >
+                    
                 </div>
             </div>
             </div>

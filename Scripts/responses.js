@@ -1,8 +1,19 @@
+
 function getBotResponse(input){
     if(input=="Yes"){
-        return "Show them how much you care with this offer";
+
+        
+        return "Below is a link to our vast Valentine offers"; 
+        
+      
+
     }else if(input == "No"){
         return "Dont worry! there are ways to enjoy valentines alone";
+    }else if(input=="yes"){
+        return "Show them how much you care with this offer";
+    }else if(input=="no"){
+        return "Dont worry! there are ways to enjoy valentines alone";
+        
     }else if(input == "I dont know!"){
         return "Dont worry! there are ways to enjoy valentines alone and with a loved one!";
     }
@@ -15,4 +26,8 @@ function getBotResponse(input){
     }else{
         return "Try asking something else!";
     }
-}
+
+
+    }
+
+
