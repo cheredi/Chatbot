@@ -26,7 +26,24 @@
                         <!--Messages-->
                         <div id="chatbox" class="chatbox">
                             <h5 id="chat-timestamp"></h5>
-                            <p id="botStarterMessage" class="botText"> <span>Loading....</span></p>
+                            <p id="botStarterMessage" class="botText"> <span>Hi, I am chatbot!</span></p>
+                            <div id="bot" class="bot">
+                            <p id="botStarterMessage2" class="botText2"> <span>Its going to be Valentines in a few days, do you have a valentine?</span></p>
+                              <div class="btn-group">
+                                <button class="yes" onclick="yes()">Yes</button>
+                                <button  class="no" onclick="no()">No</button>
+
+                            </div>
+                               <div id="chat-bar-bottom">
+                            <p></p>
+
+                        </div>
+                        <div id="response" class="response">
+                            <p id="botStarterMessage3" class="botText3"><span>Show them how much you care with this offer!</span></p>
+                        </div>
+                        <div id="response1" class="response1">
+                            <p id="botStarterMessage4" class="botText4"><span>Let’s celebrate our connection this valentine, enjoy this offer!</span></p>
+                        </div>
                             
                         </div>
                         
@@ -49,17 +66,6 @@
 
                         </div>
                         
-                        <div class="horizontal-scroll-wrapper squares">
-                            <div>
-                                <img src="/Pictures/gift1.jpg">
-                            </div>
-                            <div>
-                                <img src="/Pictures/gift2.jpg">
-                            </div>
-                            <div> 
-                                <img src="/Pictures/gift3.jpg">
-                            </div>
-                          </div>
                     </div>
                     
                 </div>
@@ -70,6 +76,3 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./Scripts/responses.js"></script>
         <script src="./Scripts/chat.js"></script>
-
-
-</html>
