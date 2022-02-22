@@ -2,10 +2,7 @@
 function getBotResponse(input){
     if(input=="Yes"){
 
-        
         return "Below is a link to our vast Valentine offers"; 
-        
-      
 
     }else if(input == "No"){
         return "Dont worry! there are ways to enjoy valentines alone";
