@@ -271,7 +271,18 @@
 .g1{
     display: none;
     margin-left:10px ;
+    vertical-align: middle;
+    border: 1px solid #999;
+    background-color: #ffffff;
+    filter:Alpha(Opacity=100);
+    visibility: hidden;
+    z-index: 50;
+    overflow: hidden;
+    text-align: center;
+
+
 }
+
 .g2{
     display: none;
     margin-left: 10px;
