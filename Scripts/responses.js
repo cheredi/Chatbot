@@ -1,30 +1,48 @@
-
-function getBotResponse(input){
-    if(input=="Yes"){
-
-        return "Below is a link to our vast Valentine offers"; 
-
-    }else if(input == "No"){
-        return "Dont worry! there are ways to enjoy valentines alone";
-    }else if(input=="yes"){
-        return "Show them how much you care with this offer";
-    }else if(input=="no"){
-        return "Dont worry! there are ways to enjoy valentines alone";
-        
-    }else if(input == "I dont know!"){
-        return "Dont worry! there are ways to enjoy valentines alone and with a loved one!";
+function getElementLeft(elm){
+    var x=0;
+//set x to elm's offsetLeft
+    x=elm.offsetLeft;
+    //set elm to its offsetParent
+    elm=elm.offsetParent;
+    //use while loop to check if elm is null
+    //if not then add current elm's offsetLeft to x
+    //offsetTop to y and set elm to its offsetParent
+    while(elm!=null){
+        x=parseInt(x) + parseInt(elm.offsetLeft);
+        elm=elm.offsetParent;
     }
+    return x;
 
-    //simple responses
-    if(input =="hello"){
-        return "Hi I am Chatbot! Its going to be Valentines in a few days, do you have a valentine?";
-    }else if(input == "goodbye"){
-        return "Talk to you later!";
+}
+function getElemtTop(elm){
+    var y=0;
+    //set x to elm's offsetLeft
+    y=elm.offsetTop;
+    //set elm to its offsetParent
+    elm=elm.offsetParent;
+    //use while loop to check if elm is null
+    //if not then add current elm's offsetLeft to x
+    //offsetTop to y and set to its offsetParent
+    while(elm !=null){
+        y=parseInt(y) + parseInt(elm.offsetTop);
+        elm.offsetParent;
+    }
+    return y;
+}
+
+function Large(obj){
+    var imgbox=document.getElementsByClassName(".g1");
+    imgbox.style.visibility='visible';
+    if(imgbox.addEventListener){
+        imgbox.addEventListener('mouseout',Out,false);
     }else{
-        return "Try asking something else!";
+        imgbox.attachEvent('omouseout',Out);
     }
-
-
-    }
-
-
+    imgbox.innerHtml='';
+    imgbox.appendChild(img);
+    imgbox.style.left=(getElement(obj)-50) + 'px';
+    imgbox.style.top=(getElement(obj)-50) + 'px';
+}
+function Out(){
+    document.getElementsByClassName(".g1").style.visibility='hiddem';
+}

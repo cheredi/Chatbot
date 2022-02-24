@@ -22,6 +22,7 @@ $(document).ready(function(){
     function gift(){
         $(".g1").show(); 
         $(".g2").hide();
+        $(">botText3").hide();
     }
     document.querySelector(".gift2").addEventListener("click",gift2);
     function gift2(){
