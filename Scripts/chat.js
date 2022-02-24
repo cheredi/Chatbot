@@ -1,59 +1,4 @@
 
-
-//function firstBotMessage(){
-    //let firstMessage ="Hello!"
-   // document.getElementById("botStarterMessage").innerHTML ='<p class="botText"><span>' + firstMessage + '</span></p>';
-//}
-
-//firstBotMessage();
-//function botMessage(){
-    //let secondMessage="Its going to be Valentines in a few days, do you have a valentine?"
-    //document.getElementById("botStarterMessage").innerHTML ='<p class="botText2"><span>' + secondMessage + '</span></p>';
-  //}
-  
-  //botMessage();
-
-//function getHardResponse(userText){
-    //let botResponse = getBotResponse(userText);
-    //let botHtml= '<p class ="botText"><span>' + botResponse + '</span></p>';
-    //$("#chatbox").append(botHtml);
-
-    //document.getElementById("chat-bar-bottom").scrollIntoView(true);
-
-//}
-
-//function getResponse(){
-   // let userText= $("#textInput").val();
-   
-    //let userHtml='<p class="userText"><span>' + userText + '</span></p>';
-   
-    //$("#chatbox").append(userHtml);
-    //document.getElementById("chat-bar-bottom").scrollIntoView(true);
-
-   // setTimeout(()=>{
-        //getHardResponse(userText);
-   // },1000)
-
-
-
-//}
-
-//function buttonSendText(sampleText){
-   // let userHtml = '<p class= "userText"><span>' + sampleText +'</span></p>'
-//}
-
-
-
-//function sendButton(){
-    //getResponse();
-//}
-
-//$("#textInput").keypress(function(){
-    //if(e.which==13){
-       // getResponse();
-    //}
-//});
-
 $(document).ready(function(){
     document.querySelector(".collapsible").addEventListener("click",openForm);
     function openForm(){
@@ -73,5 +18,26 @@ $(document).ready(function(){
         $(".response1").show();
         $(".response").hide();
     }
+    document.querySelector(".gift").addEventListener("click",gift);
+    function gift(){
+        $(".g1").show(); 
+        $(".g2").hide();
+    }
+    document.querySelector(".gift2").addEventListener("click",gift2);
+    function gift2(){
+        $(".g2").show(); 
+        $(".g1").hide();
+    }
+    document.querySelector(".gift3").addEventListener("click",gift3);
+    function gift3(){
+        $(".g3").show(); 
+        $(".g4").hide();
+    }
+    document.querySelector(".gift4").addEventListener("click",gift4);
+    function gift4(){
+        $(".g4").show(); 
+        $(".g3").hide();
+    }
+    
 
 })
