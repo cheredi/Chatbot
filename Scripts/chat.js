@@ -22,21 +22,25 @@ $(document).ready(function(){
     function gift(){
         $(".g1").show(); 
         $(".g2").hide();
+        $(".botText5").show();
     }
     document.querySelector(".gift2").addEventListener("click",gift2);
     function gift2(){
         $(".g2").show(); 
         $(".g1").hide();
+        $(".botText5").show();
     }
     document.querySelector(".gift3").addEventListener("click",gift3);
     function gift3(){
         $(".g3").show(); 
         $(".g4").hide();
+        $(".botText6").show();
     }
     document.querySelector(".gift4").addEventListener("click",gift4);
     function gift4(){
         $(".g4").show(); 
         $(".g3").hide();
+        $(".botText6").show();
     }
     
 
