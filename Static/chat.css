@@ -66,7 +66,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(204, 130, 164);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
 }
@@ -271,16 +271,7 @@
 .g1{
     display: none;
     margin-left:10px ;
-    vertical-align: middle;
-    border: 1px solid #999;
-    background-color: #ffffff;
-    filter:Alpha(Opacity=100);
-    visibility: hidden;
-    z-index: 50;
-    overflow: hidden;
-    text-align: center;
-
-
+   
 }
 
 .g2{
