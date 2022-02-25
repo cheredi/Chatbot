@@ -32,8 +32,6 @@
 .full-chat-block{
     width: 350px;
     text-align: center;
-    background-image: url("/Pictures/Valentines\ Chatbot-01.png");
-
     overflow: auto;
     scrollbar-width: none;
     height: max-content;
@@ -66,7 +64,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    background-color: rgb(204, 130, 164);
+    background-color: rgb(221, 109, 162);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
 }
@@ -165,6 +163,44 @@
 .botText3 span{
     line-height:1.5em;
     display: inline-block;
+    background: #e0e0e0;
+    padding:10px;
+    border-radius:8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .20s forwards;
+    
+}
+.botText5{
+    color:#000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+.botText5 span{
+    line-height:1.5em;
+    display:none;
+    background: #e0e0e0;
+    padding:10px;
+    border-radius:8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .20s forwards;
+    
+}
+.botText6{
+    color:#000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+.botText6 span{
+    line-height:1.5em;
+    display: none;
     background: #e0e0e0;
     padding:10px;
     border-radius:8px;
